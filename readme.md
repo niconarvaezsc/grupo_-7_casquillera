@@ -1,17 +1,43 @@
 "Equipo 7"
 Tematica del sitio:
+Cerveza artesanal Casquillera "De Medallo parael mundo..."
+Nuestro sitio presenta la Cerveza artesanal Casquillera, una cerveza colombiana fabriecada en la ciudad de Medellín
+En el departamento de antioquia
+
+Nuestra principal oferta se centra en seis estilos diferentes, con la característica de ser todas muy fáciles de tomar
+son cervezas equilibradas, disfrutadas tanto por consumidores expertos en este tipo de bebidas como de quienes apenas
+comienzan su aventura de experiencias en este maravilloso mundo de la cerveza artesanal
+
+Igualmente en nuestra página existirá una oferta en artículos de merchandising que permitan ir posicinando la marca y
+generen recordación.
 
 Público objetivo:
+Nuestra cerveza está orientada a hombres y mujeres entre los 25 y 50 años, que siempre están buscando vivir nuevas experiencias
+para sus sentidos y que estén dispuestos a pagar un precio mas alto por un producto de mejor calidad. 
 
 Referentes:
 *https://www.clubcolombia.com.co
 Me gusta este referente por la estetica que presenta en su pagina.
 
+*https://20missioncerveza.com/
+Cerveza artesanal de Medellín, es un buen referente porque al ser cerveza artesanal sirve de guia para la presentación y
+promoción de las cervezas que queremos presentar
+
+*http://hakunabeer.com/
+Cerveza artesanal con una imagen gráfica muy llamativa, se presenta muy bien la descripción de los estilos y tiene buen carro 
+de compras.
+
+*https://www.latomacervecera.com/
+Sirve como referente para tomar el modelo de inicio de sesión, mapa para su ubicación, formulario de ocntacto y barra de búsqueda
+
+*https://www.cervezapatagonia.com.ar/
+Excelente validación de mayoría de edad para ingresar al site, se disponene de forma muy acertada las imágenes, son muy sugestivas porque no van directamente al producto sino que crean la expectativa para seguir navegando y querer vcer más
+
 
 
 
 Integrantes:
-1.
+1.Gabriel Jaime Arroyave, edad 47 años y, soy de Medellín Colombia 
 2.
 3.
 4.
