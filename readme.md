@@ -1,6 +1,6 @@
 "Equipo 7"
 Tematica del sitio:
-Cerveza artesanal Casquillera "De Medallo parael mundo..."
+Cerveza artesanal Casquillera "De Medallo para el mundo..."
 Nuestro sitio presenta la Cerveza artesanal Casquillera, una cerveza colombiana fabriecada en la ciudad de Medellín
 En el departamento de antioquia
 
@@ -19,7 +19,7 @@ Referentes:
 *https://www.clubcolombia.com.co
 Me gusta este referente por la estetica que presenta en su pagina.
 *https://www.cervezaantares.com
-Nos atrajo su apariencia y la idea de interponer a la pag. principal, un bloqueo solo apto para mayores de edad.
+Nos atrajo su apariencia y la idea de interponer a la pag. principal un bloqueo solo apto para mayores de edad.
 
 *https://20missioncerveza.com/
 Cerveza artesanal de Medellín, es un buen referente porque al ser cerveza artesanal sirve de guia para la presentación y
