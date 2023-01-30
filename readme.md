@@ -44,3 +44,5 @@ Integrantes:
 6.Fernando Ogando, vivo en Capital Federal, Argentina, tengo 44 años.
 7.Mayerly Carrillo, tengo 32 años y soy de Cúcuta,Colombia.
 
+Tablero que Utilizamos:"Trello"
+Link:https://trello.com/b/taxEChOV/sprint-2
