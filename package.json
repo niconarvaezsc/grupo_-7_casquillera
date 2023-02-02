@@ -1,0 +1,27 @@
+{
+  "name": "grupo_-7_casquillera",
+  "version": "1.0.0",
+  "description": "\"Equipo 7\"\r Tematica del sitio:\r Cerveza artesanal Casquillera \"De Medallo para el mundo...\"\r Nuestro sitio presenta la Cerveza artesanal Casquillera, una cerveza colombiana fabricada en la ciudad de Medellín. En el departamento de antioquia.",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niconarvaezsc/grupo_-7_casquillera.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niconarvaezsc/grupo_-7_casquillera/issues"
+  },
+  "homepage": "https://github.com/niconarvaezsc/grupo_-7_casquillera#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
