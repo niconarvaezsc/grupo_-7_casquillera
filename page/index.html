@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASQUILLERA</title>
+    <link rel="shortcut icon" href="img/logooo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo"></h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#"></a>Home</li>
+            <li><a href="#"></a>Nuestras variedades</li>
+            <li><a href="#"></a>Explora </li>
+            <li><a href="#"></a>Nosotros</li>
+            <li class="ctn"><a  href="#"></a>Contact</li>
+        </ul>
+       <div class="mobile-nav">
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+        <h1 class="close-btn">X</h1>
+       </div>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h2>Provoca tus sentidos</h2>
+            <div class="line"></div>
+            <h1>CASQUILLERA</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- == Events == -->
+    <section class="events">
+        <div class="title">
+            <h1>Explora nuestras variedades</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="img/menu 1.jpeg" alt="">
+                <h4>EL PARAÍSO ESTÁ MÁS CERCA DE LO QUE CREES.</h4>
+                <p>Escoger una Casquillera y convertirte en un rey. Disfruta de una cerveza única y sobre todo de gran calidad.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="img/menu 2.jpeg" alt="">
+                <h4>Walking Holidays</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui, iure possimus libero expedita incidunt!</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore">
+      <div class="explore-content">
+        <h1>EL PARAÍSO ESTÁ MÁS CERCA DE LO QUE CREES</h1>
+        <div class="line"></div>
+        <p></p>
+        <a href="#" class="ctn">Learn More</a>
+      </div>
+    </section>
+
+    
+
+   <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>CASQUILLERAS, LIMAS Y EL ATARDECER DE FONDO</h1>
+                <div class="line"></div>
+                <p>Disfrutar de una Casquillera es algo más que eso. Es disfrutar de su ritual y de todo lo que te rodea en ese instante para convertir un momento cualquiera en algo extraordinario.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="img/slider1.jpeg" alt="">
+                    <img src="img/slider2.jpeg" alt="">
+                    <img src="img/slider3.jpeg" alt="">
+                    <img src="img/slider4.jpeg" alt="">
+                    <img src="img/slider5.jpeg" alt="">
+                    <img src="img/slider6.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>@casquillera.beer</p>
+        <p>De Colombia para el mundo</p>
+    </section>
+
+    <script>
+        const mobileNav = document.querySelector('.mobile-nav')
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+        const closeBtn = document.querySelector('.close-btn')
+
+        mobileNav.addEventListener('click',(e)=>{
+            navlinks.classList.toggle('mobile-menu')
+            if(e.target === menuBtn){
+                menuBtn.replaceWith(closeBtn)
+                closeBtn.style.display = 'block'
+            }
+            if(e.target === closeBtn){
+                closeBtn.replaceWith(menuBtn)
+            }
+        })
+    </script>
+</body>
+</html>
