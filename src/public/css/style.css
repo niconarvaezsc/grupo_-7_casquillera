@@ -18,9 +18,10 @@ ul {
     text-decoration: underline;
     font-weight: bold;
 }
-body , html {
-    overflow-x: hidden;
-}
+
+ body , html {
+    overflow-x:hidden;
+} 
 
 /* Navbar */
 .navbar {
@@ -32,6 +33,7 @@ body , html {
     justify-content: space-between;
     padding: 20px;
     color: #fcad03;
+    z-index: 1;
 }
 .nav-links {
     display: flex;
@@ -40,11 +42,12 @@ body , html {
 .nav-links li {
     margin: 0 30px;
 }
+/*img/WhatsApp\ Image\ 2023-01-10\ at\ 22.17.38\ \(4\).jpeg*/
 
 header {
     width: 100vw;
-    height: 100vh;
-    background-image: url(img/WhatsApp\ Image\ 2023-01-10\ at\ 22.17.38\ \(4\).jpeg);
+    height: 100vw;
+    background-image: url(/img/WhatsApp\ Image\ 2023-01-10\ at\ 22.17.38\ \(4\).jpeg);
     background-position: bottom;
     background-size: cover;
     display: flex;
@@ -52,7 +55,7 @@ header {
     justify-content: center;
 }
 .header-content {
-    margin-bottom: 150px;
+    margin-bottom: 40px;
     color: whitesmoke;
     text-align: center;
 }
@@ -95,12 +98,13 @@ section {
     font-size: 4vmin;
     color: #fcad03;
 }
+/*img/bonito-paisaje-playa-al-atardecer-barca.jpg*/
 .row {
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    background-image: url(img/bonito-paisaje-playa-al-atardecer-barca.jpg);
+    background-image: url(/img/bonito-paisaje-playa-al-atardecer-barca.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -125,11 +129,11 @@ p {
 .events .ctn {
     margin-top: 30px;
 }
-
+/* img/las6.jpeg */
 .explore {
     width: 100%;
     height: 100vh;
-    background-image: url(img/las6.jpeg);
+    background-image: url(/img/las6.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -206,11 +210,11 @@ p {
 
 /* Mobile device */
 @media only screen and (min-width:851px){
-    .row{
+     .row{
             display: flex;
             justify-content: center;
             flex-direction: column;
-    }
+    } 
 }
 @media only screen and (max-width:850px){
     .menu-btn {
@@ -285,5 +289,123 @@ li:hover {
     color: #fc036b;
     cursor: pointer;
 }
+/* LOGIN */
 
+div.subtitulo-login{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 50px;
+}
 
+.inicio-sesion, .crear-cuenta{
+    display: flex;
+    padding: 5px;
+    border-bottom: 2px solid gray;
+}
+
+#box-login{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.email-pass-login{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+}
+.label-email-pass, .recovery-password{
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #7c7c7c; 
+}
+
+input#email-login, #password-login, .recovery-password a, .button{
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 6px;
+}
+.recovery-password a{
+    margin-left: 16px;
+   text-decoration: underline;
+   color: #7c7c7c;
+}
+
+.eyes-icon{
+    position: absolute;
+    right: 19px;
+    bottom: 18px;
+    color: #7c7c7c;
+}
+
+.button{
+    margin-bottom: 10px;
+}
+
+.button button{
+    width: 90%;
+    margin-top: 5px;
+    margin-left: 13px;
+    padding: 8px;
+    background-color: #FCAD03;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    color: white;
+}
+
+.opcion-inicio-sesion{
+    display: flex;
+    justify-content: center;
+    width: 87%;
+    margin-left: 21px;
+    margin-top: 17px;
+    margin-bottom: 10px;
+    border-top: 1px solid #7c7c7c;
+}
+
+.opcion-inicio-sesion p{
+    margin: 12px;
+}
+.lock-key{
+    position: absolute;
+    bottom: 27px;
+    left: 78px;
+    font-size: 12px;
+    color: white;
+}
+
+.redes-sociales{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+}
+
+.facebook, .google, .apple{
+    text-align: center;
+    width: 20%;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #7c7c7c;
+    border-radius: 5px ;
+}
+
+.facebook{
+    font-size: 25px;
+    color: #1877F2;
+}
+
+.google{
+    font-size: 25px; 
+}
+
+.apple{
+    font-size: 25px;
+}
