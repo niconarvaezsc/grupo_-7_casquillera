@@ -14,6 +14,10 @@ const controller = {
   
   detailProduc: (req, res) =>{
     res.render('productDetail')
+  },
+
+  register:(req,res) => {
+    res.render('register')
   }
 };
 
