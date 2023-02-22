@@ -1,0 +1,213 @@
+@media only screen and (min-width:768px) {
+    .row {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* LOGIN */
+    #container-login {
+        font-size: 24px;
+        width: 80%;
+        margin-left: 74px
+    }
+
+    div.subtitulo-login {
+        margin-top: 20px;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .inicio-sesion:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    .crear-cuenta:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+    div.box-login {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+    }
+
+    .email-pass-login {
+        margin: 0px;
+        padding: 5px;
+    }
+
+    .eyes-icon {
+        right: 16px;
+        bottom: 7px;
+    }
+
+    .recovery-password {
+        width: 75%;
+        margin-top: 9px;
+        margin-bottom: 15px;
+    }
+
+    .lock-key {
+        bottom: 23px;
+        left: 218px;
+        font-size: 21px
+    }
+
+    .recovery-password a {
+        font-size: 16px;
+    }
+
+    .button {
+        width: 80%;
+        margin-left: 25px;
+    }
+
+    .button button {
+        font-size: 18px;
+
+    }
+
+    .button button:hover {
+        background-color: #f6bd44;
+    }
+
+    .opcion-inicio-sesion {
+        margin-left: 93px;
+        width: 70%;
+    }
+
+    .redes-sociales {
+        width: 87%;
+        margin-left: 41px;
+    }
+
+    .facebook:hover {
+        background-color: #dcd7d7;
+    }
+
+    .google:hover {
+        background-color: #dcd7d7;
+    }
+
+    .apple:hover {
+        background-color: #dcd7d7;
+    }
+
+    /*FIN lOGIN*/
+}
+
+@media only screen and (min-width:1024px) {
+
+    /*LOGIN*/
+    #id-container-login{
+        display: flex;
+        justify-content: center;
+    }
+
+    #container-login {
+        font-size: 27px;
+        width: 80%;
+        margin-left: 107px;
+    }
+
+    div.subtitulo-login {
+        width: 72%;
+        margin-left: 116px;
+    }
+
+    .label-email-pass,
+    .recovery-password {
+        font-size: 22px;
+    }
+
+    input#email-login,
+    #password-login,
+    .recovery-password a,
+    .button {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .recovery-password a {
+        font-size: 22px;
+        margin-left: 76px;
+    }
+
+    .opcion-inicio-sesion {
+        margin-left: 184px;
+        width: 56%;
+    }
+
+    .button button {
+        width: 72%;
+        margin-left: 80px;
+        font-size: 22px;
+    }
+
+    .redes-sociales {
+        width: 72%;
+        margin-left: 123px;
+    }
+
+    .facebook,
+    .google,
+    .apple {
+        font-size: 32px;
+    }
+}
+
+/*FIN LOGIN*/
+
+@media only screen and (min-width:1370px) {
+    #id-container-login{
+        display: flex;
+        justify-content: center;
+    }
+
+    #container-login {
+        width: 59%;
+        margin-left: 240px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-right: 13px;
+    }
+    .label-email-pass,
+    .recovery-password{
+        margin-left: 11px;
+    }
+
+    .lock-key {
+        bottom: 30px;
+        left: 283px;
+    }
+
+    .lock-key:hover{
+        cursor: pointer;
+    }
+
+    input#email-login {
+        margin-left: 9px;
+    }
+
+    input#password-login {
+        margin-left: 15px;
+    }
+
+    input#email-login:hover{
+        cursor: pointer;
+        border: 2px solid #f6bd44;
+    }
+
+    input#password-login:hover{
+        cursor: pointer;
+        border: 2px solid #f6bd44;
+    }
+    .contenedor-item .item{
+        max-width: 329px;
+    }
+}

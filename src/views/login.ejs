@@ -1,0 +1,78 @@
+<!--head-->
+<%- include ('partials/head.ejs') %>
+<body>
+    <!-- Navbar -->
+    <%- include ('partials/nav.ejs') %>
+
+    <!--Header-->
+    <%- include ('partials/header.ejs') %>
+    
+    <main id="id-container-login">
+      <!--LOGIN-->
+      <div id="container-login">
+        <div class="subtitulo-login">
+          <a href="#"><p class="inicio-sesion">Iniciar sesion</p></a>
+          <a href="/register"><p class="crear-cuenta">Crea tu cuenta</p></a>
+        </div>
+        <form action="">
+          <div class="box-login">
+            <div class="email-pass-login">
+              <label class="label-email-pass" for="email-login">Email</label>
+              <input
+                type="email"
+                name="email-login"
+                id="email-login"
+                placeholder="Ejemplo: jgonzalesc89@gmail.com"
+              />
+            </div>
+            <div class="email-pass-login">
+              <label class="label-email-pass" for="password-login">Contraseña</label>
+              <input
+                type="password"
+                name="password-login"
+                id="password-login"
+                placeholder=""
+              />
+              <div class="eyes-icon"><i class="fa-solid fa-eye"></i></div>
+            </div>
+            <div class="recovery-password">
+                <a href="">Olvide mi contraseña</a>
+            </div>
+            <div class="button">
+                <div class="lock-key"><i class="fa-solid fa-lock"></i></div>
+                <button type="submit">Iniciar sesión</button>
+            </div>
+          </div>
+        </form>
+        <div class="opcion-inicio-sesion">
+            <p>O ingresa con</p>
+        </div>
+        <div class="redes-sociales">
+            <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
+            <div class="google"><i class="fa-brands fa-google"></i></div>
+            <div class="apple"><i class="fa-brands fa-apple"></i></div>
+        </div>
+      </div>
+    </main>
+   <!--Footer-->
+<%- include ('partials/footer.ejs') %>
+
+    <script>
+      const mobileNav = document.querySelector(".mobile-nav");
+      const menuBtn = document.querySelector(".menu-btn");
+      const navlinks = document.querySelector(".nav-links");
+      const closeBtn = document.querySelector(".close-btn");
+
+      mobileNav.addEventListener("click", (e) => {
+        navlinks.classList.toggle("mobile-menu");
+        if (e.target === menuBtn) {
+          menuBtn.replaceWith(closeBtn);
+          closeBtn.style.display = "block";
+        }
+        if (e.target === closeBtn) {
+          closeBtn.replaceWith(menuBtn);
+        }
+      });
+    </script>
+  </body>
+</html>
