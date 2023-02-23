@@ -1,79 +1,67 @@
 <!--head-->
 <%- include ('partials/head.ejs') %>
 <body>
-    <!-- Navbar -->
-    <%- include ('partials/nav.ejs') %>
+  <!-- Navbar -->
+  <%- include ('partials/nav.ejs') %>
 
   <!--Header-->
   <%- include ('partials/header.ejs') %>
-  
-<main>
+
+  <main>
     <section class="contenedor">
-        <!--Contenedor de los objetos-->
-        <div class="contenedor-item">
-            <div class="item">
-                <span class="titulo-item">Calentona</span>
-                <img src="img/calentona-carrito.jpeg" alt="" class="img-item">
-                <span class="precio-item">$3.000</span>
-                <button class="button-item">Agregar al Carrito</button>
-            </div>
+      <!--Contenedor de los objetos-->
+      <div class="contenedor-item">
+        <div class="item">
+          <span class="titulo-item">Calentona</span>
+          <img src="img/calentona-carrito.jpeg" alt="" class="img-item" />
+          <span class="precio-item">$3.000</span>
+          <button class="button-item">Agregar al Carrito</button>
         </div>
-    
-        <!--carrito de compra-->
-        <div class="carrito">
-            <div class="carrito-header">
-                <h2>Tu Carrito</h2>
-            </div>
-            <div class="carrito-items">
-                <div class="carrito-item">
-                    <img src="img/calentona-carrito.jpeg" alt="" width="80px">
-                    <div class="carrito-item-detail">
-                        <span class="carrito-item-titulo">Calentona</span>
-                        <div class="seletor-cantidad">
-                            <i class="fa-solid fa-minus restar-cantidad"></i>
-                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
-                            <i class="fa-solid fa-plus sumar-cantidad"></i>
-                        </div>
-                        <span class="carrito-item-precio">$3.500</span>
-                    </div>
-                    <span class="btn-eliminar">
-                        <i class="fa-solid fa-trash"></i>
-                    </span>
-                </div>
-            </div>
-    
-            <div class="carrito-total">
-                <div class="fila">
-                    <strong>Tu Total</strong>
-                    <span class="carrito-precio-total">
-                        $10.500
-                    </span>
-                </div>
-                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
-    
-            </div>
+      </div>
+
+      <!--carrito de compra-->
+      <div class="carrito">
+        <div class="carrito-header">
+          <h2>Tu Carrito</h2>
         </div>
-       </section>  
-</main>
-<!--Footer-->
-<%- include ('partials/footer.ejs') %>
+        <div class="carrito-items">
+          <div class="carrito-item">
+            <img src="img/calentona-carrito.jpeg" alt="" width="80px" />
+            <div class="carrito-item-detail">
+              <span class="carrito-item-titulo">Calentona</span>
+              <div class="seletor-cantidad">
+                <i class="fa-solid fa-minus restar-cantidad"></i>
+                <input
+                  type="text"
+                  value="1"
+                  class="carrito-item-cantidad"
+                  disabled
+                />
+                <i class="fa-solid fa-plus sumar-cantidad"></i>
+              </div>
+              <span class="carrito-item-precio">$3.500</span>
+            </div>
+            <span class="btn-eliminar">
+              <i class="fa-solid fa-trash"></i>
+            </span>
+          </div>
+        </div>
 
-    <script>
-        const mobileNav = document.querySelector('.mobile-nav')
-        const menuBtn = document.querySelector('.menu-btn')
-        const navlinks = document.querySelector('.nav-links')
-        const closeBtn = document.querySelector('.close-btn')
+        <div class="carrito-total">
+          <div class="fila">
+            <strong>Tu Total</strong>
+            <span class="carrito-precio-total"> $10.500 </span>
+          </div>
+          <button class="btn-pagar">
+            Pagar <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--Footer-->
+  <%- include ('partials/footer.ejs') %>
 
-        mobileNav.addEventListener('click',(e)=>{
-            navlinks.classList.toggle('mobile-menu')
-            if(e.target === menuBtn){
-                menuBtn.replaceWith(closeBtn)
-                closeBtn.style.display = 'block'
-            }
-            if(e.target === closeBtn){
-                closeBtn.replaceWith(menuBtn)
-            }
-        })
-    </script>
+  <!--Script-->
+  <%- include('partials/script.ejs') %>
 </body>
-</html>
