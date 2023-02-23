@@ -46,4 +46,4 @@ Integrantes:
 7.Mayerly Carrillo, tengo 32 años y soy de Cúcuta,Colombia.
 
 Tablero que Utilizamos:"Trello"
-Link:https://trello.com/b/taxEChOV/sprint-2
+Link:https://trello.com/b/taxEChOV/proyecto-casquillera
