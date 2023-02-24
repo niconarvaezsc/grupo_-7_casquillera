@@ -410,3 +410,65 @@ input#email-login, #password-login, .recovery-password a, .button{
 .apple{
     font-size: 25px;
 }
+
+/*REGISTER*/
+
+#section-register{
+    padding: 15px;
+    width: 100%;
+}
+
+
+#section-register h3{
+    text-align: center;
+    margin: 15px;
+}
+
+#section-register .button-register{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#section-register button{
+    width: 90%;
+    margin: 15px;
+    padding: 10px;
+    background: RGB(252,173,3);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-register{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-register input{
+    width: 90%;
+    margin: 10px;
+    padding: 5px;
+    border: 0.1px solid gray;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.terminos-condiciones{
+    width: 90%;
+    margin-left: 15px;
+}
+
+.terminos-condiciones input{
+    margin: 5px;
+    margin-left: 10px;
+}
+
+.terminos-condiciones label a{
+    color: #FCAD03;
+}
+
+.terminos-condiciones label a:hover{
+    text-decoration: underline;
+}

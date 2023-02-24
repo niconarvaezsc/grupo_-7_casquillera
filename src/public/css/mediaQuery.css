@@ -98,6 +98,31 @@
     }
 
     /*FIN lOGIN*/
+
+    /*REGISTER*/
+
+    #section-register{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        text-align: center;
+    }
+
+    .form-register input{
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+    }
+
+    #section-register button{
+        width: 60%;
+    }
+
+    .terminos-condiciones{
+        width: 60%;
+        margin-left: 20%;
+    }
+
 }
 
 @media only screen and (min-width:1024px) {
@@ -159,9 +184,28 @@
     .apple {
         font-size: 32px;
     }
+    /*FIN LOGIN*/
+
+     /*REGISTER*/
+
+
+    .form-register input{
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+    }
+
+    #section-register button{
+        width: 60%;
+    }
+
+    .terminos-condiciones{
+        width: 60%;
+        margin-left: 16%;
+    }
 }
 
-/*FIN LOGIN*/
+
 
 @media only screen and (min-width:1370px) {
     #id-container-login{
@@ -209,5 +253,36 @@
     }
     .contenedor-item .item{
         max-width: 329px;
+    }
+    /*register*/
+    #section-register{
+        text-align: center;
+        margin-left: 15%;
+    }
+
+    #section-register h3{
+        text-align: center;
+        margin: 26px;
+        font-size: 24px;
+    }
+
+    .form-register input{
+        width: 50%;
+        font-size: 24px;
+    }
+
+    #section-register button{
+        width: 50%;
+        font-size: 18px;
+    }
+
+    #section-register button:hover{
+        background: #f4c662;
+        cursor: pointer;
+    }
+
+    .terminos-condiciones{
+        width: 50%;
+        margin-left: 25%;
     }
 }

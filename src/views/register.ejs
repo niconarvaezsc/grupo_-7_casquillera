@@ -2,38 +2,43 @@
 <%- include ('partials/head.ejs') %>
 
 <body>
+  <!-- Navbar -->
+  <%- include ('partials/nav.ejs') %>
 
-<!-- Navbar -->
-<%- include ('partials/nav.ejs') %>
+  <!--Header-->
+  <%- include ('partials/header.ejs') %>
 
-<!--Header-->   
-<%- include ('partials/header.ejs') %>
+  <!--SECCION REGISTER-->
 
-<!--SECCION REGISTER-->
+  <section id="section-register">
+    <div id="container-register">
+      <h3>Registra tu cuenta</h3>
+      <form action="">
+        <div class="form-register">
+          <input type="text" placeholder="Usuario" />
+          <input type="password" placeholder="Contraseña" />
+          <input type="password" placeholder="Confirma tu Contraseña" />
+          <input type="email" placeholder="Indica tu email" />
+          <input type="email" placeholder="Confirma tu email" />
+        </div>
+      </form>
+      <div class="terminos-condiciones">
+        <input type="checkbox" name="terminos" />
+        <label for="terminos">
+          Declaro que he leído y autorizo el uso de mis datos personales de
+          acuerdo a la <a href="#">Autorización</a> y acepto los
+          <a href="#">Términos y Condiciones</a> de CASQUILLERA.</label
+        >
+      </div>
+      <div class="button-register">
+        <button type="submit">Completar registro</button>
+      </div>
+    </div>
+  </section>
 
-<section id="section-login">
+  <!--Footer-->
+  <%- include ('partials/footer.ejs') %>
 
-</section>
-
-<!--Footer-->
-<%- include ('partials/footer.ejs') %>
-<script>
-                        const mobileNav = document.querySelector('.mobile-nav')
-                        const menuBtn = document.querySelector('.menu-btn')
-                        const navlinks = document.querySelector('.nav-links')
-                        const closeBtn = document.querySelector('.close-btn')
-
-                        mobileNav.addEventListener('click', (e) => {
-                            navlinks.classList.toggle('mobile-menu')
-                            if (e.target === menuBtn) {
-                                menuBtn.replaceWith(closeBtn)
-                                closeBtn.style.display = 'block'
-                            }
-                            if (e.target === closeBtn) {
-                                closeBtn.replaceWith(menuBtn)
-                            }
-                        })
-</script>
+  <!--Script-->
+  <%- include('partials/script.ejs') %>
 </body>
-
-</html>
