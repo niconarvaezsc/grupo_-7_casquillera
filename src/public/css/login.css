@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+div.subtitulo-login{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+
+.inicio-sesion{
+    display: flex;
+    padding: 5px;
+    font-size: 20px;
+    color: #7c7c7c;
+    border-bottom: 2px solid gray;
+}
+
+#box-login{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.email-pass-login{
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    padding: 21px;
+}
+.label-email-pass, .recovery-password{
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #7c7c7c;
+}
+
+input#email-login, #password-login, .recovery-password a, .button{
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 6px;
+}
+.recovery-password a{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    color: #7c7c7c;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-left: 3px;
+}
+
+.button button{
+    width: 90%;
+    margin-top: 8px;
+    padding: 8px;
+    background-color: #FCAD03;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    color: white;
+}
+
+.opcion-inicio-sesion{
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+}
+
+.opcion-inicio-sesion p{
+    margin: 12px;
+}
+.lock-key{
+    position: absolute;
+    bottom: 27px;
+    left: 78px;
+    font-size: 12px;
+    color: white;
+}
+
+.redes-sociales{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.facebook, .google, .apple{
+    text-align: center;
+    width: 20%;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #7c7c7c;
+    border-radius: 5px ;
+}
+
+.facebook{
+    font-size: 25px;
+    color: #1877F2;
+}
+
+.google{
+    font-size: 25px;
+}
+
+.apple{
+    font-size: 25px;
+}
