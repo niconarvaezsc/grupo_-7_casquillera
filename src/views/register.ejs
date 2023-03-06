@@ -1,9 +1,9 @@
 <!--head-->
-<%- include ('partials/head.ejs') %>
+<%- include ('partials/head.ejs', {title: 'Registro', styles:['Registro']}) %>
 
-<body>
-  <!-- Navbar -->
-  <%- include ('partials/nav.ejs') %>
+  <body>
+    <!-- Navbar -->
+    <%- include ('partials/nav.ejs') %>
 
   <!--Header-->
 
@@ -13,13 +13,23 @@
   <section id="section-register">
     <div id="container-register">
       <h3>Registra tu cuenta</h3>
-      <form action="">
+      
+      <form action="/usuario/register" method="POST" enctype="multipart/form-data">
         <div class="form-register">
-          <input type="text" placeholder="Usuario" />
-          <input type="password" placeholder="Contraseña" />
-          <input type="password" placeholder="Confirma tu Contraseña" />
-          <input type="email" placeholder="Indica tu email" />
-          <input type="email" placeholder="Confirma tu email" />
+          <input type="text" name="nombreCompleto" placeholder="Usuario" 
+          value = " <%= locals.dataGuardada ? dataGuardada.nombreCompleto : null %>"
+          />
+          
+          <% if (locals.errors && errors.nombreCompleto) { %>
+            <div class="texto-advertencia">
+              <%= errors.nombreCompleto.msg %>
+            </div>
+          <% } %>
+          <input type="password" name="contrasenia" placeholder="Contraseña" />
+          <input type="password" name="confirmaContrasenia"  placeholder="Confirma tu Contraseña" />
+          <input type="email" name="email" placeholder="Indica tu email" />
+          <input type="email" name="confirmaEmail" placeholder="Confirma tu email" />
+          <input type="file" name="avatar">
         </div>
         <div class="terminos-condiciones">
           <input type="checkbox" name="terminos" />
