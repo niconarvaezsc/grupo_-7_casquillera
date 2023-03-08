@@ -25,7 +25,7 @@ const validacion = [
     body('nombreCompleto').notEmpty().withMessage('ingresa un nombre'),
     body('contrasenia').notEmpty().withMessage('ingresa una contraseña'),
     body('confirmaContrasenia').notEmpty().withMessage('ingresa una contraseña'),
-    body('email').notEmpty().withMessage('ingresa un email'),
+    body('email').notEmpty().withMessage('ingresa un email').bail().isEmail().withMessage('Ingresa un formato de correo válido'),
     body('confirmaEmail').notEmpty().withMessage('ingresa un email'),
 ]
 
