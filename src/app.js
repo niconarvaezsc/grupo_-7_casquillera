@@ -1,11 +1,12 @@
-const express = require("express");
-const path = require("path");
+const express = require('express');
+const path = require('path');
 const methodOverride =  require('method-override');
+
 
 
 const mainRouter = require('./routes/main');
 const productsRouter = require('./routes/products'); // Rutas /products
-const userRouter = require('./router/user');
+const userRouter = require('./routes/user');
 
 const app = express();
 
