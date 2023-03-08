@@ -105,7 +105,6 @@ body {
 }
 
 
-<<<<<<< HEAD
 
 .products-wrapper {
     margin-top: 30px;
@@ -183,8 +182,6 @@ body {
     transition: 300ms;
   }
 
-=======
->>>>>>> 74cc9df736ce2b8087c3feff7344d6ad8fc0e6a4
 @media (max-width : 800px) {
     .menu_hamburge {
         display: flex;

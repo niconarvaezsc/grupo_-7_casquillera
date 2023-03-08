@@ -21,7 +21,6 @@ const controller = {
   },
   
   detailProduc: (req, res) =>{
-<<<<<<< HEAD
     const { id } = req.params;
    const products = getProducts();
     const product = products.find((element) => element.id === +id);
@@ -30,9 +29,6 @@ const controller = {
 
   register:(req,res) => {
     res.render('register')
-=======
-    res.render('productDetail')
->>>>>>> 74cc9df736ce2b8087c3feff7344d6ad8fc0e6a4
   }
 };
 
