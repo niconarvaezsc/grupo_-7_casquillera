@@ -1,0 +1,44 @@
+<!--head-->
+<%- include ('partials/head.ejs') %>
+<body>
+  <!-- Navbar -->
+  <%- include ('partials/nav.ejs') %>
+
+  <!--Header-->
+  
+
+  <!--Main section-->
+
+  <div class="container products-wrapper">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="products-title">Todos los productos</h2>
+			</div>
+		
+			<% products.forEach((product) => { %>
+				<div class="col-12 col-sm-6 col-lg-3">
+					<section class="product-box">
+						<a href="/products/detail/<%= product.id %>">
+							<figure class="product-box_image">
+								<img src="/img/<%= product.image %>" alt="imagen de producto">
+							</figure>							
+						</a>
+						<article class="product-box_data">
+							<h2>Precio $<%= product.price %></h2>
+							<span><%= product.description %></span>
+							<p><%= product.name %></p>
+						</article>
+					</section>
+				</div>
+			<% }) %>
+		
+		</div>
+	</div>
+
+
+  <!--Footer-->
+  <%- include ('partials/footer.ejs') %>
+
+  <!--Script-->
+  <script src="script/nav.js"></script>
+</body>
