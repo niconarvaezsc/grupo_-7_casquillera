@@ -368,10 +368,23 @@ body {
     margin: 0;
     background: #fcad03;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    color: whitesmoke ;
+    
 }
-.footer p {
-    color: whitesmoke;
+
+.logo-section-footer  {
+    width: 50%;
+}
+
+.info-about {
     margin: 20px auto;
+}
+.social-networks i {
+     display: flex;
+     color: rgb(82,68,50);
+     width: 2em;
 }
 
 /*REGISTER*/
