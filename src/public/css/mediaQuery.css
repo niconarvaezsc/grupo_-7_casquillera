@@ -28,7 +28,23 @@
     }
 
     .footer {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .info-about {
+        font-size: 15px;
+    }
+    .social-networks {
+        display: inline-flex;
+        padding: 10px;
+        width: 100%;
+        font-size: 20px;
+        text-align: left;
+    }
+    .social-networks i {
+        margin: 0px 10px 0px 40px;
+        width: 2em;
     }
 
 
@@ -190,6 +206,33 @@
         width: 60%;
         margin-left: 20%;
     }
+    /*Footer */
+    .logo-section-footer {
+        display: none;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction:column;
+        padding: 5px;
+    }
+    .info-about {
+        font-size: 20px;
+    }
+    .social-networks {
+    display: inline-flex;
+    padding: 0px 0px 0px 50px;
+    width: 100%;
+    font-size: 20px;
+    text-align: left; 
+    
+}
+ .social-networks i {
+     margin: 0px 10px 0px 80px;
+     width: 2em;
+     padding: 5px;
+     
+ }   
 
 }
 

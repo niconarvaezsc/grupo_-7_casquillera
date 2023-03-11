@@ -364,27 +364,44 @@ body {
 .footer {
     width: 100%;
     min-height: 100px;
-    padding: 20px 80px;
+    padding: 20px;
     margin: 0;
     background: #fcad03;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
+    text-align: justify;
+    display: inline-flex;
     color: whitesmoke ;
     
 }
+.logo-section-footer {
+    width: 33%;
+    margin: 10px;
+}
 
-.logo-section-footer  {
-    width: 50%;
+.logo-section-footer img {
+    width: 20%;
+    margin-left: 30px;
+
 }
 
 .info-about {
-    margin: 20px auto;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
+.social-networks {
+    padding: 20px;
+    width: 34%;
+    font-size: 20px;
+    text-align: center;
+    
+  }
 .social-networks i {
-     display: flex;
+     display: inline-flex;
+     margin-top: 50px;
+     margin-left: 30px;
      color: rgb(82,68,50);
-     width: 2em;
+     width: 1em;
 }
 
 /*REGISTER*/
