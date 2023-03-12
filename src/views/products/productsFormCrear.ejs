@@ -1,0 +1,37 @@
+<!--head-->
+<%- include ('../partials/head.ejs') %>
+<body>
+  <!-- Navbar -->
+  <%- include ('../partials/nav.ejs') %>
+
+  <!--Header-->
+  
+
+  <!--section crear-->
+
+  <form action="/products/detail" method="POST" enctype="multipart/form-data">
+    <div class="box-form">
+      <label for="usuario">Nombre del producto</label>
+      <input type="text" name="name" id="name">
+    </div>
+    <div class="box-form">
+      <label for="price">Precio del producto</label>
+      <input type="number" name="price" id="price">
+    </div>
+    <div class="box-form">
+      <input type="file" name="imgFile" id="imgFile">
+    </div>
+    <div class="box-form">
+     <textarea name="description" id="description" cols="30" rows="7" placeholder="Ingrese descripción"></textarea>
+    </div>
+    <div class="box-form">
+      <button type="submit">Crear</button>
+    </div>
+  </form>
+
+  	<!-- footer -->
+	<%- include('../partials/footer') %>
+	<!-- /footer -->
+
+</body>	
+</html>

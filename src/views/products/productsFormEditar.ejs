@@ -1,0 +1,35 @@
+<!--head-->
+<%- include ('../partials/head.ejs') %>
+<body>
+  <!-- Navbar -->
+  <%- include ('../partials/nav.ejs') %>
+
+  <!--Header-->
+  
+
+  <!--editar-->
+  <form action="/products/detail/edit/<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+    <div class="box-form">
+      <label for="usuario">Nombre del producto</label>
+      <input type="text" name="name" id="name" value="<%= product.nombre %>">
+    </div>
+    <div class="box-form">
+      <label for="price">Precio del producto</label>
+      <input type="number" name="price" id="price" value="<%= product.precio %>">
+    </div>
+    <div class="box-form">
+      <input type="file" name="imgFile" id="imgFile">
+    </div>
+    <div class="box-form">
+     <textarea name="description" id="description" cols="30" rows="7" placeholder="Ingrese descripción" <%= product.descripcion %>></textarea>
+    </div>
+    <div class="box-form">
+      <button type="submit">Crear</button>
+    </div>
+  </form>
+  	<!-- footer -->
+	<%- include('../partials/footer') %>
+	<!-- /footer -->
+
+</body>	
+</html>

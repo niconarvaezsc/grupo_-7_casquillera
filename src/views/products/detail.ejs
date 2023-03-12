@@ -1,8 +1,8 @@
 <!--head-->
-<%- include ('partials/head.ejs') %>
+<%- include ('../partials/head.ejs') %>
 <body>
   <!-- Navbar -->
-  <%- include ('partials/nav.ejs') %>
+  <%- include ('../partials/nav.ejs') %>
 
   <!--Header-->
   
@@ -13,7 +13,7 @@
 	<div class="container products-wrapper">
 		<div class="row">
 			<div class="col-12">
-				<h2 class="products-title"><%= product.name %></h2>
+				<h2 class="products-title"><%= product.nombre %></h2>
 			</div>
 		</div>
 		<div class="product-detail">
@@ -21,13 +21,13 @@
 				<div class="col-12 col-lg-8">
 					<img src="/img/<%= product.image %>" alt="product image" class="product-detail-img">
 					<p class="product-detail-description">
-						<%= product.description %>
+						<%= product.descripcion %>
 					</p>
 				</div>
 				<div class="col-12 col-lg-4">
 					<article class="product-detail-info">											
 							<p class="product-detail-price small">
-								<h2><span>Precio $<%= product.price %></span></h2>
+								<h2><span>Precio $<%= product.precio %></span></h2>
 																
 							</p>							
 						<ul class="actions-list">
@@ -43,8 +43,8 @@
 						<a href="#" class="buy-now-button">COMPRAR AHORA</a>
 						<hr>
 
-						<a href="/products/edit/<%= product.id %>" class="action-button edit">EDITAR PRODUCTO</a>
-						<form action="/products/<%= product.id %>?_method=DELETE" method="POST" style="display: inline-flex">
+						<a href="/products/detail/edit/<%= product.id %>" class="action-button edit">EDITAR PRODUCTO</a>
+						<form action="/products/detail/delete/<%= product.id %>?_method=DELETE" method="POST" style="display: inline-flex">
 							<button type="submit" class="action-button delete">ELIMINAR</button>
 						</form>
 					</article>
@@ -55,7 +55,7 @@
 	<!-- /product detail -->
 
 	<!-- footer -->
-	<%- include('partials/footer') %>
+	<%- include('../partials/footer') %>
 	<!-- /footer -->
 
 </body>	
