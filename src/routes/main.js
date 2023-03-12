@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get("/", mainController.home);
 router.get("/login", mainController.login);
-router.get("/cart", mainController.productCart);
+router.get("/cart/:id", mainController.productCart);
 router.get('/register', mainController.register)
 
 module.exports = router;

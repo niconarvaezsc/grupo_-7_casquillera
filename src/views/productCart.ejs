@@ -12,9 +12,9 @@
       <!--Contenedor de los objetos-->
       <div class="contenedor-item">
         <div class="item">
-          <span class="titulo-item">Calentona</span>
-          <img src="img/calentona-carrito.jpeg" alt="" class="img-item" />
-          <span class="precio-item">$3.000</span>
+          <span class="titulo-item"><%= product.nombre %></span>
+          <img src="/img/<%= product.image %>" alt="" class="img-item" />
+          <span class="precio-item"><%= product.precio %></span>
           <button class="button-item">Agregar al Carrito</button>
         </div>
       </div>
@@ -26,9 +26,9 @@
         </div>
         <div class="carrito-items">
           <div class="carrito-item">
-            <img src="img/calentona-carrito.jpeg" alt="" width="80px" />
+            <img src="/img/<%= product.image %>" alt="" width="80px" />
             <div class="carrito-item-detail">
-              <span class="carrito-item-titulo">Calentona</span>
+              <span class="carrito-item-titulo"><%= product.nombre %></span>
               <div class="seletor-cantidad">
                 <i class="fa-solid fa-minus restar-cantidad"></i>
                 <input
@@ -39,7 +39,7 @@
                 />
                 <i class="fa-solid fa-plus sumar-cantidad"></i>
               </div>
-              <span class="carrito-item-precio">$3.500</span>
+              <span class="carrito-item-precio"><%= product.precio %></span>
             </div>
             <span class="btn-eliminar">
               <i class="fa-solid fa-trash"></i>
@@ -50,7 +50,7 @@
         <div class="carrito-total">
           <div class="fila">
             <strong>Tu Total</strong>
-            <span class="carrito-precio-total"> $10.500 </span>
+            <span class="carrito-precio-total"> <%= product.precio %> </span>
           </div>
           <button class="btn-pagar">
             Pagar <i class="fa-solid fa-bag-shopping"></i>
