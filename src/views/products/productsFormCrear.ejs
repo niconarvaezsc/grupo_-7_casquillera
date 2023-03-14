@@ -8,34 +8,31 @@
       <!--Header-->
 
 
-      <!--section crear-->
-      <section class="product-creation-form">
-        <h2>Formulario Creación de Productos</h2>
-        <form action="/products/create" method="POST" enctype="multipart/form-data">
-          <div class="box-form">
-            <label for="usuario">Nombre del producto</label>
-            <input class="controls-form" type="text" name="name" id="name">
-          </div>
-          <div class="box-form">
-            <label for="price">Precio del producto</label>
-            <input class="controls-form" type="number" name="price" id="price">
-          </div>
-          <div class="box-form">
-            <input class="button-file" type="file" name="imgFile" id="imgFile">
-          </div>
-          <div class="box-form-description">
-            <textarea name="description" id="description" cols="30" rows="7"
-              placeholder="Ingrese descripción"></textarea>
-          </div>
-          <div class="box-form-button-create">
-            <button type="submit">Crear</button>
-          </div>
-        </form>
-      </section>
-      <!-- footer -->
-      <%- include('../partials/footer') %>
-        <!-- /footer -->
+  <!--section crear-->
 
-  </body>
+  <form action="/products/create" method="POST" enctype="multipart/form-data">
+    <div class="box-form">
+      <label for="usuario">Nombre del producto</label>
+      <input type="text" name="name" id="name">
+    </div>
+    <div class="box-form">
+      <label for="price">Precio del producto</label>
+      <input type="number" name="price" id="price">
+    </div>
+    <div class="box-form">
+      <input type="file" name="imgFile" id="imgFile">
+    </div>
+    <div class="box-form">
+     <textarea name="description" id="description" cols="30" rows="7" placeholder="Ingrese descripción"></textarea>
+    </div>
+    <div class="box-form">
+      <button type="submit">Crear</button>
+    </div>
+  </form>
 
-  </html>
+  	<!-- footer -->
+	<%- include('../partials/footer') %>
+	<!-- /footer -->
+
+</body>	
+</html>
