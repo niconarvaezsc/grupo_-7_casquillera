@@ -9,8 +9,11 @@
 
   <!--editar-->
   <form action="/products/edit/<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+    <h1 class="title-form">Editar producto</h1>
+    <div class="container-form">
+    
     <div class="box-form">
-      <label for="usuario">Nombre del producto</label>
+      <label for="price">Nombre del producto</label>
       <input type="text" name="name" id="name" value="<%= product.nombre %>">
     </div>
     <div class="box-form">
@@ -24,12 +27,19 @@
      <textarea name="description" id="description" cols="30" rows="7" placeholder="Ingrese descripción" <%= product.descripcion %>></textarea>
     </div>
     <div class="box-form">
-      <button type="submit">Crear</button>
+      <button type="submit">Actualizar</button>
     </div>
+    
+  </div>
   </form>
-  	<!-- footer -->
+
+<!-- footer -->
 	<%- include('../partials/footer') %>
 	<!-- /footer -->
+
+	<!--SCRIPT-->
+	<script src="script/nav.js"></script>
+    <script src="script/slider.js"></script>
 
 </body>	
 </html>
