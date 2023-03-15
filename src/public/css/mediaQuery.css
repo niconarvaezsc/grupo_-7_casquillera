@@ -386,6 +386,7 @@
     }
 
     #section-register button {
+        margin-left: 265px;
         width: 50%;
         font-size: 18px;
     }
