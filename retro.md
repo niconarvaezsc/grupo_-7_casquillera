@@ -17,3 +17,13 @@ Hacer mas: Debemos continuar apoyandonos y colaborandonos en cualqier inquietud 
 Seguir haciendo: Debemos seguir comprometidos en el desarrollo y la entrega de los sprint.
 Hacer menos: comunicarnos por whatsapp.
 Dejar de hacer: Debemos dejar de esperar de los compañeros que no se han comunicado con el grupo.
+
+Conclusiones del sprint 4:
+
+Comenzar hacer: Como equipo debemos comunicarnos más, informar en que estamos trabajando.
+
+Hacer más: Aportar al equipo para que las tareas se lleven a cabo en tiempo para la entrega.
+
+Seguir haciendo: Trabajando las tareas aun cuando no tengamos claro como debemos realizarlas apoyandonos de nuestros docentes y compañeros de equipo.
+
+Hacer menos: Guardar silencio cuando se necesite informacion sobre las tareas que faltan por realizar.

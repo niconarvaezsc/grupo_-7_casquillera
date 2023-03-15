@@ -1,13 +1,15 @@
 <!--head-->
 <%- include ('../partials/head.ejs') %>
-<body>
-  <!-- Navbar -->
-  <%- include ('../partials/nav.ejs') %>
 
-  <!--Header-->
-  
+  <body>
+    <!-- Navbar -->
+    <%- include ('../partials/nav.ejs') %>
+
+      <!--Header-->
+
 
   <!--section crear-->
+
   <form action="/products/create" method="POST" enctype="multipart/form-data">
     <h1 class="title-form">Crear producto</h1>
     <div class="container-form">
@@ -34,10 +36,6 @@
   	<!-- footer -->
 	<%- include('../partials/footer') %>
 	<!-- /footer -->
-
-	<!--SCRIPT-->
-	<script src="script/nav.js"></script>
-    <script src="script/slider.js"></script>
 
 </body>	
 </html>
