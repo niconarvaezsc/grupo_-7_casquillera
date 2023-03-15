@@ -7,6 +7,7 @@
 .title-form{
     margin: 15px;
     text-align: center;
+    
 }
 
 .container-form {
@@ -29,6 +30,7 @@
     font-weight: 500;
     margin: 5px;
     font-size: 20px;
+    
 }
 
 .box-form input {
