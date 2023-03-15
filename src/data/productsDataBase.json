@@ -1,23 +1,5 @@
 [
  {
-  "id": 1,
-  "nombre": "Salamera",
-  "descripcion": "Es un estilo inspirado en la porte inglesa, con un profundo carácter a malta tostada y tambien con un sabor amargo originado por el lúpulo.Cuerpo medio, donde los sabores a malta combinan con los sutiles sabores afrutado, con 5,3% de alcohol, una cerveza que no es para cualquiera, es para paladares selectos qye aprecien los pequeños detalles",
-  "image": "salamera.jpeg",
-  "categoria": "Licor",
-  "tamaños": "350ml",
-  "precio": "4000"
- },
- {
-  "id": 2,
-  "nombre": "Calentona",
-  "descripcion": "Es un estilo inspirado en ela ALE IRLANDESA ROJA, ligeramente lupulada y un poco de tostado para agregar color y sequedad de sabor malteado, final limpio y caracteristico color rojo, con 4.8% aprox de alcohol, una cerveza que anima tus momentos y te hace entrar en calor",
-  "image": "calentona.jpeg",
-  "categoria": "Licor",
-  "tamaños": "350ml",
-  "precio": "4000"
- },
- {
   "id": 3,
   "nombre": "Asolapada",
   "descripcion": "turbia clasica de estilo BELGA, una cerveza ALE DE TRIGO LIGERA, refrescante, sabrosa, elegante y de intensidad moderada, con sabores de coriandro y naranja que dan a esta cerveza su caracter distintivo, con 4,5% aprox de alcohol, una cerveza suave al paladar y maliciosa, si te descuidas te prendre!!",
