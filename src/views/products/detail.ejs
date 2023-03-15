@@ -1,66 +1,73 @@
 <!--head-->
 <%- include ('../partials/head.ejs') %>
-<body>
-  <!-- Navbar -->
-  <%- include ('../partials/nav.ejs') %>
 
-  <!--Header-->
-  
+	<body>
+		<!-- Navbar -->
+		<%- include ('../partials/nav.ejs') %>
 
-  <!--Main section-->
-	
-	<!-- product detail -->
-	<div class="container products-wrapper">
-		<div class="row">
-			<div class="col-12">
-				<h2 class="products-title"><%= product.nombre %></h2>
-			</div>
-		</div>
-		<div class="product-detail">
-			<div class="row">
-				<div class="col-12 col-lg-8">
-					<img src="/img/<%= product.image %>" alt="product image" class="product-detail-img">
-					<p class="product-detail-description">
-						<%= product.descripcion %>
-					</p>
+			<!--Header-->
+
+
+			<!--Main section-->
+
+			<!-- product detail -->
+			<div class="container-edit">
+
+				<div class="products-title">
+					<h2>
+						<%= product.nombre %>
+					</h2>
 				</div>
-				<div class="col-12 col-lg-4">
-					<article class="product-detail-info">											
-							<p class="product-detail-price small">
+
+				<div class="product-box-info">
+
+					<article class="product-detail">
+						<div class="box-product-detail">
+							<div class="product-detail-info">
+								<img src="/img/<%= product.image %>" alt="product image" class="product-detail-img">
+							</div>
+							<div class="product-detail-info">
+								<div class="detail-description">
+								<p><%= product.descripcion %></p>
 								<h2><span>Precio $<%= product.precio %></span></h2>
-																
-							</p>							
-						<ul class="actions-list">
-							<li>
-								<i class="fas fa-credit-card"></i>
-								<p>Pagá en efectivo o con transferencia</p>
-							</li>							<li>
-								<i class="fas fa-store"></i>
-								<p>Domicilio gratis</p>
-							</li>
-						</ul>
+								<p>Pagá en efectivo o con transferencia <i class="fas fa-credit-card"></i></p>
+								<p>Domicilio gratis <i class="fas fa-store"></i></p>
+								</div>
+							</div>
+						</div>
 
-						<a href="/cart/<%= product.id %>" class="buy-now-button">COMPRAR AHORA</a>
-						<hr>
+						<div class="box-edit">
 
-						<a href="/products/edit/<%= product.id %>" class="action-button edit">EDITAR PRODUCTO</a>
-						<form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST" style="display: inline-flex">
-							<button type="submit" class="action-button delete">ELIMINAR</button>
-						</form>
+							<div class="box-link">
+								<a href="/cart/<%= product.id %>" class="buy-now-button">COMPRAR AHORA</a>
+							</div>
+
+							<div class="box-link">
+								<a href="/products/edit/<%= product.id %>" class="action-button edit">EDITAR
+									PRODUCTO</a>
+							</div>
+
+							<form action="/products/delete/<%= product.id %>?_method=DELETE" method="POST">
+								<button type="submit" class="action-button delete">ELIMINAR</button>
+							</form>
+
+						</div>
+
 					</article>
+
+
 				</div>
 			</div>
-		</div>
-	</div>
-	<!-- /product detail -->
+			<!-- /product detail -->
 
-	<!-- footer -->
-	<%- include('../partials/footer') %>
-	<!-- /footer -->
+			<!-- footer -->
+			<%- include('../partials/footer.ejs') %>
+				<!-- /footer -->
 
-	<!--SCRIPT-->
-	<script src="script/nav.js"></script>
-    <script src="script/slider.js"></script>
+				<!--SCRIPT-->
+				<script src="../script/nav.js"></script>
+				<script src="../script/slider.js"></script>
 
-</body>	
-</html>
+	</body>
+
+	</html>
