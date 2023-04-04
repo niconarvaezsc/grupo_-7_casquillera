@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/app.js",
   "scripts": {
-    "dev":"nodemon src/app.js",
+    "dev": "nodemon src/app.js",
     "start": "nodemon ./src/bin/www"
   },
   "keywords": [],
@@ -14,6 +14,7 @@
     "nodemon": "^2.0.20"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
     "express-validator": "^6.15.0",

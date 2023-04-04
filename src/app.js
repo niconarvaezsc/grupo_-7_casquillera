@@ -8,6 +8,7 @@ const mainRouter = require('./routes/main');
 const productsRouter = require('./routes/products'); // Rutas /products
 const userRouter = require('./routes/user');
 
+
 const app = express();
 
 

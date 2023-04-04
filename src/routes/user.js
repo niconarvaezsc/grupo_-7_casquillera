@@ -20,6 +20,7 @@ const uploadFile = multer ({ storage });
 
 //router
 const userController = require('../controllers/userController');
+const user = require('../models/Users');
 
 const validacion = [
     body('nombreCompleto').notEmpty().withMessage('ingresa un nombre'),
