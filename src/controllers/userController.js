@@ -17,10 +17,10 @@ const userController = {
                 dataGuardada : req.body
             });
         }
-        let userInDB = User.findByField('email', req.body.email);
+        let userInDB = Users.findByField('email', req.body.email);
 
         if (userInDB) {
-            return res.render('reister', {
+            return res.render('register', {
                 errors: {
                     email: {
                         msg: 'Este email ya esta registrado'
@@ -33,10 +33,10 @@ const userController = {
         let userToCreate = {
             ...req.body,
             contrasenia: bcryptjs.hashSync(req.body.constrasenia, 10),
-            avatar: req.file.filename
+            avatar: req.file.fileName
         }     
 
-        User.create(userToCreate);
+        Users.create(req.body);
         return res.send('ok, se guardo el usuario'); 
     }
 }
